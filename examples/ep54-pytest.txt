@@ -1,0 +1,14 @@
+$ uv run pytest -v
+============================= test session starts ==============================
+platform darwin -- Python 3.13.14, pytest-9.2.0, pluggy-1.7.0 -- /private/var/www/github/onion-agent/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /private/var/www/github/onion-agent
+configfile: pyproject.toml
+plugins: anyio-4.16.0
+collecting ... collected 3 items
+
+tests/test_loop.py::test_no_tool_call_ends_in_one_turn PASSED            [ 33%]
+tests/test_loop.py::test_tool_result_is_appended_and_loop_continues PASSED [ 66%]
+tests/test_loop.py::test_stops_after_max_turns PASSED                    [100%]
+
+============================== 3 passed in 0.01s ===============================

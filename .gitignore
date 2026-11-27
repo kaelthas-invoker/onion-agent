@@ -1,0 +1,13 @@
+# 密钥：只提交 .env.example
+.env
+.env.*
+!.env.example
+
+# Python / uv
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Agent 默认工作目录
+workspace/

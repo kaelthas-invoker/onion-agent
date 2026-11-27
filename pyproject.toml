@@ -1,0 +1,25 @@
+[project]
+name = "onion-agent"
+version = "0.1.0"
+description = "跟 Kael 手搓 Agent：Kael Lab 第四季配套代码"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.13"
+dependencies = [
+    "openai>=3.57.0",
+]
+
+[project.scripts]
+onion-agent = "onion_agent.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.11,<0.12"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
